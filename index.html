@@ -9,14 +9,14 @@
                 left: 50%;
                 transform: translatex(-50%) translateY(-150%);
                 bottom: 50%;
-                font-size: 400%;
+                font-size: 5vw;
             }
             .button {
                 position: absolute;
                 right: 50%;
                 transform: translatex(50%) translateY(50%);
                 bottom: 50%;
-                font-size: 300%;
+                font-size: 8vw;
                 background-color: brown;
                 color: black;
                 border: none;
@@ -27,8 +27,33 @@
             .button:hover{
                 background-color: #3B0B0B;
             }
+        /*데스크탑용*/
+            @media (min-width: 1024px) {
+            .center {
+                font-size: 4em;
+            }
+            .button {
+                font-size: 3em;
+            }
+            }
+
+        /* 모바일 화면 크기 */
+            @media (max-width: 768px) {
+                .center {
+                    font-size: 5vw;
+                }
+                .button {
+                    font-size: 4vw;
+                    padding: 5% 10%;
+                }
+            }
         </style>
     </head>
+    <body>
+        <p class="center">Happy Birthday!</p>
+        <button class="button" onclick="window.location.href='celerbratepage/celerbrate.html'">open</button>
+    </body>
+</html>
     <body>
         <p class="center">Happy Birthday!</p>
         <button class="button" onclick="window.location.href='celerbratepage/celerbrate.html'">open</button>
